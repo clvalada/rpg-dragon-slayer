@@ -55,9 +55,9 @@ const locations = [
     }
 ];
 const monsters = [
-    {name: "Toothless", level: 2, health: 15},
-    {name: "Drogon", level: 8, health: 60},
-    {name: "Godzilla", level: 20, health: 300}
+    {name: "slime", level: 2, health: 15},
+    {name: "fanged beast", level: 8, health: 60},
+    {name: "dragon", level: 20, health: 300}
   ];
 
 //initialize buttons
@@ -87,9 +87,20 @@ function goCave() {
     update(locations[2]);
 }
 
-function fightDragon() {
-    console.log("Fighting dragon.");
+function fightSlime() {
+    fighting = 0;
+    goFight();
 }
+
+function fightBeast() {
+    fighting = 1;
+    goFight();
+  }
+  
+  function fightDragon() {
+    fighting = 2;
+    goFight();
+  }
 
 function buyHealth () {
     if (gold >= 10) {
