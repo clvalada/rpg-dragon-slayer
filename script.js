@@ -64,7 +64,13 @@ const locations = [
         "button text": ["Go to town square", "Go to town square", "Go to town square"],
         "button functions": [goTown, goTown, goTown],
         text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.'
-      }  
+      },
+      {
+        name: "lose",
+        "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
+        "button functions": [restart, restart, restart],
+        text: "You die. ☠️"
+      } 
 ];
 const monsters = [
     {name: "slime", level: 2, health: 15},
@@ -133,9 +139,9 @@ function attack() {
     if (health <= 0) {
         lose();
     } else if (monsterHealth <= 0) {
-        defeatMonster();
+        fighting === 2 ? winGame() : defeatMonster();
     }
-  }
+}
 
 function dodge() {
     text.innerText = "You dodge the attack from the " + monsters[fighting].name + ".";
