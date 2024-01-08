@@ -133,15 +133,15 @@ function attack() {
   }
 
 function dodge() {
-  
+    text.innerText = "You dodge the attack from the " + monsters[fighting].name + ".";
 }
 
 function defeatMonster() {
-
+    gold += Math.floor(monsters[fighting].level * 6.7);
 }
 
 function lose(){
-    
+
 }
 
 function buyHealth () {
