@@ -6,10 +6,7 @@ body {
     background-color: #0a0a23;
     color: #ffffff;
     padding: 10px;
-}
-
-#game {
-    max-width: 500px;
+    text-align: center;
 }
 
 #game {
@@ -17,14 +14,16 @@ body {
     max-height: 400px;
     background-color: #ffffff;
     color: #ffffff;
-    margin: 30px auto 0px auto;
+    margin: 30px auto 0px;
     padding: 10px;
 }
 
-#controls, #stats {
+#controls,
+#stats {
     border: 1px solid #0a0a23;
     color: #0a0a23;
     padding: 5px;
+    text-align: center;
 }
 
 #monsterStats {
@@ -32,7 +31,8 @@ body {
     border: 1px solid #0a0a23;
     padding: 5px;
     color: #ffffff;
-    background: #c70d0d
+    background: #c70d0d;
+    text-align: center;
 }
 
 .stat {
