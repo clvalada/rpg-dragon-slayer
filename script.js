@@ -16,7 +16,8 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
-const image = document.querySelector('image');
+const image = document.querySelector('#imagePlaceholder');
+const photoCredit = document.querySelector('#photoCredit');
 const weapons = [
     { name: 'stick', power: 5 },
     { name: 'dagger', power: 30 },
@@ -46,56 +47,64 @@ const locations = [
       "button text": ["Go to the store", "Go to the cave", "Fight Dragon"],
       "button functions": [goStore, goCave, fightDragon],
       text: "You are in the town square. You see a sign that says \"Store\".",
-      image: "images/town-square.jpg"
+      image: "images/town-square.jpg",
+      photoCredit: 'Image by <a href="https://pixabay.com/users/chiemseherin-1425977/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7253426">🌼Christel🌼</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7253426">Pixabay</a>'
     },
     {
       name: "store",
       "button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square"],
       "button functions": [buyHealth, buyWeapon, goTown],
       text: "You enter the store.",
-      image: "images/store.jpg"
+      image: "images/store.jpg",
+      photoCredit: 'Image by <a href="https://pixabay.com/users/birgitkeil-6458071/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2755266">Birgit Keil</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2755266">Pixabay</a>'
     },
     {
       name: "cave",
       "button text": ["Fight Slime-O", "Fight The Beast", "Go to town square"],
       "button functions": [fightSlime, fightBeast, goTown],
       text: "You enter the cave. You see some monsters.",
-      image: "images/cave.jpg"
+      image: "images/cave.jpg",
+      photoCredit: 'Image by <a href="https://pixabay.com/users/hans-2/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=95193">Hans</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=95193">Pixabay</a>'
     },
     {
       name: "fight",
       "button text": ["Attack", "Dodge", "Run"],
       "button functions": [attack, dodge, goTown],
       text: "You are fighting a monster.",
-      image: "images/right.jpg"
+      image: "images/fight.jpg",
+      photoCredit: 'Image by <a href="https://pixabay.com/users/azboomer-25561/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=790815">Bruce</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=790815">Pixabay</a>'
     },
     {
         name: "kill monster",
         "button text": ["Go to the town square", "Go to the town square", "Go to the town square"],
         "button functions": [goTown, goTown, easterEgg],
         text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.',
-        image: "images/kill-monster.jpg"
+        image: "images/kill-monster.jpg",
+        photoCredit: 'Image by <a href="https://www.deviantart.com/thomashauser/gallery">Thomas Hauser</a> from <a href="https://www.deviantart.com/thomashauser/art/Slayed-Dragon-865567862">Deviant Art</a>'
     },
     {
         name: "lose",
         "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
         "button functions": [restart, restart, restart],
         text: "You die. ☠️",
-        image: "images/lose.jpg"
+        image: "images/lose.jpg",
+        photoCredit: 'Image by <a href="https://pixabay.com/users/jaymethunt-12275/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=321443">jaymethunt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=321443">Pixabay</a>'
     },
     {
         name: "win",
         "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
         "button functions": [restart, restart, restart],
         text: "You defeat the dragon! YOU WIN THE GAME! 🎉",
-        image: "images/win.jpg"
+        image: "images/win.jpg",
+        photoCredit: 'Image by <a href="https://pixabay.com/users/wadams-955461/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1073396">William Adams</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1073396">Pixabay</a>'
     },
     {
         name: "easter egg",
         "button text": ["2", "8", "Go to town square?"],
         "button functions": [pickTwo, pickEight, goTown],
         text: "You find a secret game. Pick a number above. Ten numbers will be randomly chosen between 0 and 10. If the number you choose matches one of the random numbers, you win!",
-        image: "images/easter-egg.jpg"
+        image: "images/easter-egg.jpg",
+        photoCredit: 'Image by <a href="https://pixabay.com/users/thorstenf-7677369/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4178462">Thorsten Frenzel</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4178462">Pixabay</a>'
     } 
 ];
 
@@ -112,7 +121,8 @@ function update(location){
     button1.onclick = location["button functions"][0];
     button2.onclick = location["button functions"][1];
     button3.onclick = location["button functions"][2];
-    text.innerText = location.text
+    text.innerText = location.text;
+    photoCredit.innerHTML = location.photoCredit;
 }
 
 function goTown() {
