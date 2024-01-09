@@ -16,6 +16,7 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
+const image = document.querySelector('image');
 const weapons = [
     { name: 'stick', power: 5 },
     { name: 'dagger', power: 30 },
