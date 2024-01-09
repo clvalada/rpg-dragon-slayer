@@ -35,6 +35,11 @@ body {
     text-align: center;
 }
 
+#image {
+    color:#0a0a23;
+    text-align: center;
+}
+
 .stat {
     padding-right: 10px;
 }
