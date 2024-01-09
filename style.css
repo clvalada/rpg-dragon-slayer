@@ -2,16 +2,24 @@ body {
     background-color: #0a0a23
 }
 
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'MedievalSharp', sans-serif;
+    font-size: 75px;
+    margin: 20px auto 0px;
+    padding: 5px;
+}
  #text {
     background-color: #0a0a23;
     color: #ffffff;
     padding: 10px;
     text-align: center;
+    font-size: 24px;
 }
 
 #game {
     max-width: 500px;
-    max-height: 400px;
     background-color: #ffffff;
     color: #ffffff;
     margin: 30px auto 0px;
@@ -47,9 +55,14 @@ body {
   }
   
   #photoCredit {
-    text-align: center; 
+    color:#0a0a23;
+    text-align: center;
+    text-decoration: none; 
   }
   
+  #photoCredit a {
+    text-decoration: none;
+  }
 
 .stat {
     padding-right: 10px;
