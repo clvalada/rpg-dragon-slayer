@@ -151,6 +151,10 @@ function attack() {
         } else if (monsterHealth <= 0) {
             fighting === 2 ? winGame() : defeatMonster();
         } 
+        if (Math.random() <= .1 && inventory.length !== 1) {
+            text.innerText += " Your " + inventory.pop() + " breaks.";
+            currentWeapon--;
+          }
     }
   
 function getMonsterAttackValue(level){
@@ -161,7 +165,7 @@ function getMonsterAttackValue(level){
 
 function isMonsterHit() {
     if (hit)
-    return Math.random() > .2;
+    return Math.random() > .2 || health < 20;
 }
 
 function dodge() {
@@ -238,3 +242,6 @@ function restart(){
     goTown();
 }
 
+function easterEgg(){
+    update(locations[7]);
+}
