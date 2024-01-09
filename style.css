@@ -36,9 +36,20 @@ body {
 }
 
 #image {
-    color:#0a0a23;
-    text-align: center;
-}
+    max-width: 100%;
+    margin: 0 auto; 
+  }
+  
+  #imagePlaceholder {
+    width: 100%;
+    height: auto; 
+    display: block; 
+  }
+  
+  #photoCredit {
+    text-align: center; 
+  }
+  
 
 .stat {
     padding-right: 10px;

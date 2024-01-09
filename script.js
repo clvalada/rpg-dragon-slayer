@@ -95,8 +95,8 @@ const locations = [
         "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
         "button functions": [restart, restart, restart],
         text: "You defeat the dragon! YOU WIN THE GAME! 🎉",
-        image: "images/win.jpg",
-        photoCredit: 'Image by <a href="https://pixabay.com/users/wadams-955461/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1073396">William Adams</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1073396">Pixabay</a>'
+        image: "images/victory.jpg",
+        photoCredit: 'Image by <a href="https://pixabay.com/users/sarahrichterart-1546275/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3084651">Sarah Richter</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3084651">Pixabay</a>'
     },
     {
         name: "easter egg",
@@ -122,6 +122,7 @@ function update(location){
     button2.onclick = location["button functions"][1];
     button3.onclick = location["button functions"][2];
     text.innerText = location.text;
+    image.src = location.image;
     photoCredit.innerHTML = location.photoCredit;
 }
 
