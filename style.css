@@ -24,6 +24,7 @@ h1 {
     color: #ffffff;
     margin: 30px auto 0px;
     padding: 10px;
+    border-radius: 10px;
 }
 
 #controls,
