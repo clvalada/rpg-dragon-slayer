@@ -76,3 +76,29 @@ button {
     background-image: linear-gradient( #fecc4c, #ffac33);
     border: 3px solid #feac32;
   }
+
+@media (max-width: 900px) {
+  #text {
+    font-size: xx-large;
+  }
+
+  #game {
+    max-width: 90% - 15px;
+    margin: 30px auto 0px
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  #controls,
+  #stats,
+  #monsterStats {
+      font-size: x-large;
+      flex-direction: column;
+      align-items: center;
+      background-color: lightgray;
+  }
+   
+    
+}
