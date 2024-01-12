@@ -19,8 +19,8 @@ Dragon Slayer is a role-playing-game based on a freeCodeCamp.org tutorial. Once 
 - [Licenses](#licenses)
 
 ## Screenshots
-![Dragon Slayer](images/screenshot.png)
 
+![Dragon Slayer Desktop](images/dragon-slayer-screenshots.jpg)
 
 ## Usage
 Visit the website below and follow the prompts to play the game.
