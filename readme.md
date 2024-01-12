@@ -8,6 +8,7 @@ Dragon Slayer is a role-playing-game based on a freeCodeCamp.org tutorial. Once 
 ![HTML](https://img.shields.io/badge/HTML-orange.svg)
 ![CSS](https://img.shields.io/badge/CSS-purple.svg)
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow.svg)
+![Respnsive Design](https://img.shields.io/badge/ResponsiveDesign-red.svg)
 
 ## Table of Contents
 
