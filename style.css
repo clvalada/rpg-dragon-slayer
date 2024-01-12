@@ -55,8 +55,9 @@ h1 {
     display: block; 
   }
   
-  #photoCredit {
-    color:#0a0a23;
+  #photoCredit,
+  #photoCredit a {
+    color:darkgray;
     text-align: center;
     text-decoration: none; 
   }
@@ -83,12 +84,12 @@ button {
   }
 
   #game {
-    max-width: 90% - 15px;
+    max-width: 100%;
     margin: 30px auto 0px
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 60px;
   }
 
   #controls,
@@ -99,5 +100,10 @@ button {
       align-items: center;
   }
    
+  button {
+    width: 75%;
+    font-size: x-large;
+    margin: 4px;
+  }
     
 }

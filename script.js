@@ -48,7 +48,7 @@ const locations = [
       "button functions": [goStore, goCave, fightDragon],
       text: "You are in the town square. You see a sign that says \"Store\".",
       image: "images/town-square.jpg",
-      photoCredit: 'Image by <a href="https://pixabay.com/users/chiemseherin-1425977/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7253426">🌼Christel🌼</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7253426">Pixabay</a>'
+      photoCredit: 'Image by <a href="https://pixabay.com/users/chiemseherin-1425977/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7253426">Christel</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7253426">Pixabay</a>'
     },
     {
       name: "store",
